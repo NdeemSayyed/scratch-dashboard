@@ -53,7 +53,7 @@ function Footer({ light }) {
             &copy; {new Date().getFullYear()},
             <Link href="https://www.creative-tim.com/" target="_blank">
               <MDTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
-                &nbsp;DanerobNFTs&nbsp;
+                &nbsp;Scratch-NFTs&nbsp;
               </MDTypography>
             </Link>
             All Rights Reserved.
@@ -82,7 +82,7 @@ function Footer({ light }) {
                   fontWeight="regular"
                   color={light ? "white" : "dark"}
                 >
-                  DanerobNFTs
+                  Scratch-NFTs
                 </MDTypography>
               </Link>
             </MDBox>
