@@ -23,7 +23,7 @@
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
 import AllTransactions from "layouts/AllTransactions";
-import ManageSales from "layouts/ManageSales/index";
+// import ManageSales from "layouts/ManageSales/index";
 // import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
@@ -65,14 +65,14 @@ const routes = [
 		route: "/admin/tables",
 		component: <Tables />,
 	},
-	{
-		type: "collapse",
-		name: "Manage Sales",
-		key: "ManageSales",
-		icon: <Icon fontSize="small">receipt_long</Icon>,
-		route: "/admin/manage-sale",
-		component: <ManageSales />,
-	},
+	// {
+	// 	type: "collapse",
+	// 	name: "Manage Sales",
+	// 	key: "ManageSales",
+	// 	icon: <Icon fontSize="small">receipt_long</Icon>,
+	// 	route: "/admin/manage-sale",
+	// 	component: <ManageSales />,
+	// },
 	{
 		type: "collapse",
 		name: "Profile",

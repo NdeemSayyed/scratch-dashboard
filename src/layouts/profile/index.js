@@ -32,7 +32,7 @@ function Overview() {
 
 	useEffect(() => {
 		console.log("from use effect");
-		axios.get(`${API}/admin/get-profile?email=admin%40mail.com`).then((res) => {
+		axios.get(`${API}/admin/get-profile?email=test%40mail.com`).then((res) => {
 			console.log("hey");
 			console.log(res.data.name, res.data.email);
 			setName(res.data.name);

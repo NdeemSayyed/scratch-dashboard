@@ -31,9 +31,9 @@ function Tables() {
 								py={3}
 								px={2}
 								variant="gradient"
-								bgColor="info"
+								bgColor="success"
 								borderRadius="lg"
-								coloredShadow="info"
+								coloredShadow="success"
 								sx={{ display: "flex", justifyContent: "space-between" }}>
 								<MDTypography variant="h6" color="white">
 									Users Table

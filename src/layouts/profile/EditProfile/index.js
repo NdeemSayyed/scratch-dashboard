@@ -33,7 +33,7 @@ function Cover() {
 	const { name, email, password } = values;
 	useEffect(() => {
 		setOldPass(values.password);
-		axios.get(`${API}/admin/get-profile?email=admin%40mail.com`).then((res) => {
+		axios.get(`${API}/admin/get-profile?email=test%40mail.com`).then((res) => {
 			setValues({
 				name: res.data.name,
 				email: res.data.email,
@@ -76,7 +76,7 @@ function Cover() {
 		}
 
 		axios
-			.patch(`${API}/admin/update-admin?email=admin%40mail.com`, payload)
+			.patch(`${API}/admin/update-admin?email=test%40mail.com`, payload)
 			.then((res) => {
 				if (res.status === 200) {
 					toast.success("Details changed successfully");
@@ -91,7 +91,7 @@ function Cover() {
 			<Card>
 				<MDBox
 					variant="gradient"
-					bgColor="info"
+					bgColor="success"
 					borderRadius="lg"
 					coloredShadow="success"
 					mx={2}
@@ -164,7 +164,7 @@ function Cover() {
 							<MDButton
 								onClick={(event) => onSubmit(event)}
 								variant="gradient"
-								color="info"
+								color="success"
 								fullWidth>
 								Set Changes
 							</MDButton>

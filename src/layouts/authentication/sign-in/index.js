@@ -68,9 +68,9 @@ function Basic() {
 			<Card>
 				<MDBox
 					variant="gradient"
-					bgColor="info"
+					bgColor="success"
 					borderRadius="lg"
-					coloredShadow="info"
+					coloredShadow="success"
 					mx={2}
 					mt={-3}
 					p={2}
@@ -119,7 +119,7 @@ function Basic() {
 								onClick={(event) => onSubmit(event)}
 								href="/admin/dashboard"
 								variant="gradient"
-								color="info"
+								color="success"
 								fullWidth>
 								sign in
 							</MDButton>
@@ -131,7 +131,7 @@ function Basic() {
 									component={Link}
 									to="/admin/editProfile"
 									variant="button"
-									color="info"
+									color="success"
 									fontWeight="medium"
 									textGradient>
 									Reset password
