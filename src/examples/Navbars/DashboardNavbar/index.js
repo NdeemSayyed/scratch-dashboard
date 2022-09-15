@@ -166,7 +166,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
               <MDInput label="Search here" />
             </MDBox> */}
 						<MDBox color={light ? "white" : "inherit"}>
-							<Link to="/authentication/sign-in/basic">
+							<Link to="/admin/profile">
 								<IconButton sx={navbarIconButton} size="small" disableRipple>
 									<Icon sx={iconsStyle}>account_circle</Icon>
 								</IconButton>

@@ -38,26 +38,6 @@ function Basic() {
 	async function onSubmit(event) {
 		event.preventDefault();
 		console.log(email, password);
-		// const requestOptions = {
-		// 	method: "POST",
-		// 	headers: {
-		// 		"Content-Type": "application/json",
-		// 	},
-		// 	body: JSON.stringify(logindetails),
-		// };
-
-		// fetch(`${API}/admin/login`, requestOptions)
-		// 	.then((response) => response.json())
-		// 	.then((result) => {
-		// 		localStorage.setItem("token", result?.accessToken);
-		// 		navigate("/admin/dashboard");
-		// 		setSuccess(true);
-		// 		console.log(result);
-		// 	})
-		// 	.catch((error) => {
-		// 		console.log("error", error);
-		// 		setErrMsg("Unauthorized");
-		// 	});
 
 		try {
 			const response = await axios.post(
@@ -75,6 +55,8 @@ function Basic() {
 
 			const accessToken = response?.data?.accessToken;
 			localStorage.setItem("token", response?.data?.accessToken);
+			localStorage.setItem("email", email);
+			console.log("email is", email);
 			setEmail("");
 			setPassword("");
 			setSuccess(true);
