@@ -35,6 +35,7 @@ function DefaultNavbar({ transparent, light, action }) {
 	const openMobileNavbar = ({ currentTarget }) =>
 		setMobileNavbar(currentTarget.parentNode);
 	const closeMobileNavbar = () => setMobileNavbar(false);
+	const mail = localStorage.getItem("email");
 
 	useEffect(() => {
 		// A function that sets the display state for the DefaultNavbarMobile.
@@ -89,7 +90,7 @@ function DefaultNavbar({ transparent, light, action }) {
 				})}>
 				<MDBox
 					component={Link}
-					to="/admin/dashboard"
+					to={mail ? "/admin/dashboard" : ""}
 					py={transparent ? 1.5 : 0.75}
 					lineHeight={1}
 					pl={{ xs: 0, lg: 1 }}>
