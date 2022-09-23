@@ -36,7 +36,7 @@ export default function AuthorTadle() {
 									color="text"
 									fontWeight="medium">
 									<a
-										href={`https://rinkeby.etherscan.io/tx/${res.data[i].transactionHash}`}
+										href={`https://goerli.etherscan.io/tx/${res.data[i].transactionHash}`}
 										target="_blank"
 										rel="noreferrer">
 										{res.data[i].transactionHash
@@ -120,7 +120,11 @@ export default function AuthorTadle() {
 			},
 			// { Header: "amount", accessor: "amount", align: "left" },
 			// { Header: "sale period", accessor: "sale", align: "center" },
-			{ Header: "Transaction Time", accessor: "transactionTime", align: "center" },
+			{
+				Header: "Transaction Time",
+				accessor: "transactionTime",
+				align: "center",
+			},
 			// { Header: "remaining claim", accessor: "remaining", align: "center" },
 			{ Header: "transaction", accessor: "tx", align: "center" },
 			// { Header: "action", accessor: "action", align: "center" },
